@@ -28,7 +28,7 @@
         <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required><br><br>
 
         <label for="idade">Idade:</label><br>
-        <input type="number" name="idade" id="idade"  min="1" max="120" placeholder="Sua idade" required><br><br>
+        <input type="number" name="idade" id="idade"  min="1" max="120" placeholder="Sua idade"  required><br><br>
 
         <label for="estados">Estado de entrega:</label><br>
 
@@ -107,28 +107,51 @@
         max - Valor máximo
         value - Valor a ser iniciado
         -->
-    <label for="icor">Intensidade da cor (brilho):</label>
+    <label for="icor">Intensidade da cor (brilho):</label><br>
     <input type="range" id="icor" min="1" max="10" value="5" color="0000FF">
     
     </fieldset>
 
     <fieldset>
-    <legend>Entrega</legend>
+        <legend>Entrega</legend>
 
-    <label for="dataEntrega">Data desejada para entrega:</label><br>
-    <input type="date" id="dataEntrega" name="dataEntrega"><br><br>
+        <label for="dataEntrega">Data desejada para entrega:</label><br>
+        <input type="date" id="dataEntrega" name="dataEntrega"><br><br>
 
-    <label for="ihora">Hora preferida para entrega:</label><br>
-    <input type="time" name="hora" id="ihora">
+        <label for="ihora">Hora preferida para entrega:</label><br>
+        <input type="time" name="hora" id="ihora"><br><br>
 
-
-
+        <label for="mescompra">Mês da compra:</label><br>
+        <input type="month" id="mescompra" name="mescompra">
 
     </fieldset>
 
+    
+    <fieldset>
+        <legend>Sua Opinião</legend>
 
+        <label for="imsg">Conte qual é a sua expectativa sobre o carro:</label><br>
+        <textarea name="" id="imsg" cols="50" rows="10" placeholder="Exemplo: Espero que o carro tenha boa autonomia, seja confortável, silencioso e impressione os vizinhos!"></textarea>
 
+    </fieldset>
 
+    <fieldset>
+        
+        <legend>Avaliação dos Modelos BYD</legend>
+
+        <label for="avdolphinplus">Avalie o BYD Dolphin Plus</label><br>
+        <input type="number" name="avdolphinplus" id="avdolphinplus" min="0" max="5" placeholder="0 a 5"><br>
+
+        <label for="avgs">Avalie o BYD GS</label><br>
+        <input type="number" name="avgs" id="avgs" min="0" max="5" placeholder="0 a 5"><br>
+
+        <label for="avmini">Avalie o BYD Mini</label><br>
+        <input type="number" name="avmini" id="avmini" min="0" max="5" placeholder="0 a 5"><br><br>
+
+    </fieldset>
+
+    <br><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
 
 
         <!-- Botão para enviar as respostas do formulário -->
