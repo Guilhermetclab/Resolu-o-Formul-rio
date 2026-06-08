@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Exercício Formulário</title>
+
+</head>
+    <body>
+
+       <form method="POST" autocomplete="on">
+
+            <!-- O fieldset cria a moldura ao redor dos campos -->
+        <fieldset>
+            <!-- O legend coloca o título exatamente em cima da linha da moldura -->
+        <legend>Dados Pessoais</legend>
+
+        <label for="nome"> Nome completo:</label><br>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required><br><br>
+
+        <label for="email"> E-mail:</label><br>
+        <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required><br><br>
+
+        <label for="telefone"> Telefone(Formato(XX)XXXXX-XXXX):</label><br>
+        <input type="tel" name="telefone" id="telefone" placeholder="(11)91234-5678" required><br><br>
+
+        <label for="senha">Crie uma senha:</label><br>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required><br><br>
+
+        <label for="idade">Idade:</label><br>
+        <input type="number" name="idade" id="idade"  min="1" max="120" placeholder="Sua idade" required><br><br>
+
+        <label for="estados">Estado de entrega:</label><br>
+
+        <select name="estados" id="estados">
+            <option value=""selected>-- Selecione seu estado --</option>
+            <option value="Acre">Acre</option>
+            <option value="Alagoas" >Alagoas</option>
+            <option value="Amapá">Amapá</option>
+            <option value="Amazonas" >Amazonas</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Distrito Federal" >Distrito Federal</option>
+            <option value="Espírito Santo" >Espírito Santo</option>
+            <option value="Goiás" >Goiás</option>
+            <option value="Maranhão" >Maranhão</option>
+            <option value="Mato Grosso" >Mato Grosso</option>
+            <option value="Mato Grosso do Sul" >Mato Grosso do Sul</option>
+            <option value="Minas Gerais" >Minas Gerais</option>
+            <option value="Pará" >Pará</option>
+            <option value="Paraíba" >Paraíba</option>
+            <option value="Paraná" >Paraná</option>
+            <option value="Pernambuco" >Pernambuco</option>
+            <option value="Piauí" >Piauí</option>
+            <option value="Rio de Janeiro" >Rio de Janeiro</option>
+            <option value="Rio Grande do Norte" >Rio Grande do Norte</option>
+            <option value="Rio Grande do Sul" >Rio Grande do Sul</option>
+            <option value="Rondônia" >Rondônia</option>
+            <option value="Roraima" >Roraima</option>
+            <option value="Santa Catarina" >Santa Catarina</option>
+            <option value="São Paulo" >São Paulo</option>
+            <option value="Sergipe" >Sergipe</option>
+            <option value="Tocantins" >Tocantins</option>
+    </select><br><br>
+
+    <label for="fcnh">Envie uma foto da sua CNH:</label><br>
+      <input type="file" name="cnh" id="fcnh">
+
+    </fieldset>
+
+    <fieldset>
+    <legend>Escolha do Carro</legend>
+ 
+    <label for="carros1">Escolha o modelo:</label><br>
+    
+    <input type="radio" name="carros" id="carros1" value="c1">
+    <label for="carros1">BYD Seal</label><br>
+
+    <input type="radio" name="carros" id="carros2" value="c2">
+    <label for="carros2">BYD Han</label><br>
+
+    <input type="radio" name="carros" id="carros3" value="c3">
+    <label for="carros3">BYD Song Plus</label><br>
+
+    <label>Itens adcionais:</label><br>
+    
+    
+    <input type="checkbox" id="opcao1" name="sompremium" value="1">
+    <label for="opcao1">Som Premium</label><br>
+
+    
+    <input type="checkbox" id="opcao2" name="arcondicionado" value="2">
+    <label for="opcao2">Ar-condicionado Digital</label><br>     
+    
+    
+    <input type="checkbox" id="opcao3" name="Câmera360" value="3">
+    <label for="opcao3">Câmera 360°</label><br><br>
+
+     
+        
+    <label for="icor">Cor do carro:</label><br>
+    <input type="color" name="cor" id="icor" value="#000000"><br><br>
+    
+
+        <!-- input Range
+        É utilizado como muma barra de porcentágem
+        min - Valor mínimo
+        max - Valor máximo
+        value - Valor a ser iniciado
+        -->
+    <label for="icor">Intensidade da cor (brilho):</label>
+    <input type="range" id="icor" min="1" max="10" value="5" color="0000FF">
+    
+    </fieldset>
+
+    <fieldset>
+    <legend>Entrega</legend>
+
+    <label for="dataEntrega">Data desejada para entrega:</label><br>
+    <input type="date" id="dataEntrega" name="dataEntrega"><br><br>
+
+    <label for="ihora">Hora preferida para entrega:</label><br>
+    <input type="time" name="hora" id="ihora">
+
+
+
+
+    </fieldset>
+
+
+
+
+
+
+        <!-- Botão para enviar as respostas do formulário -->
+        <!-- <button type="submit">Responder</button> -->
+
+</form>
+
+    </body>
+</html> 
